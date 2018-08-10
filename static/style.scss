@@ -1,10 +1,10 @@
-body {
+body{
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-#canvas {
+#canvas{
   border: solid 1px blue;
   width: 100%;
 }
@@ -21,52 +21,52 @@ button {
   position: absolute;
   width: 100px;
   height: 40px;
-}
-button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-button:hover {
-  background-color: #bcc6bf;
+  &:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  &:hover{
+    background-color: #bcc6bf;
+  }
 }
 
-#easeBot, .easeBotClick {
+#easeBot{
   top: 1%;
   left: 2%;
 }
-
-.easeBotClick {
+.easeBotClick{
+  @extend #easeBot;
   background-color: #27db3f;
-}
-.easeBotClick:hover {
-  background-color: #2fc443;
+  &:hover{
+    background-color: #2fc443;
+  }
 }
 
-#mediumBot, .mediumBotClick {
+#mediumBot{
   top: 1%;
   left: 9%;
 }
-
-.mediumBotClick {
+.mediumBotClick{
+  @extend #mediumBot;
   background-color: yellow;
-}
-.mediumBotClick:hover {
-  background-color: #e0d23a;
+  &:hover{
+    background-color: #e0d23a;
+  }
 }
 
-#unrealBot, .unrealBotClick {
+#unrealBot{
   top: 1%;
   left: 16%;
 }
-
-.unrealBotClick {
+.unrealBotClick{
+  @extend #unrealBot;
   background-color: red;
-}
-.unrealBotClick:hover {
-  background-color: #db4d1e;
+  &:hover{
+    background-color: #db4d1e;
+  }
 }
 
-#clear {
+#clear{
   height: 35px;
   border-radius: 15px;
   top: 2%;
@@ -74,4 +74,3 @@ button:hover {
   font-size: 24px;
 }
 
-/*# sourceMappingURL=style.css.map */
